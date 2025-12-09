@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio HenrikzZ</title>
+</head>
+<body>
+    <div class="cabecalho" style="background-color: black;">
+        <div class="cabecalho" style="justify-content: center;">
+            <a href="index.html"><img src="src/LogoHC - Copia.png" alt="LogoHC" style="width: 100px; height: 100px;"></a>
+            <div class="cabecalho" style="position: absolute; align-items: center;">
+              <a href="#Projetos" style="margin-left: 925px; margin-top: 20px;" class="links">Projetos</a>
+              <a href="#Designs" style="margin-top: 20px; margin-left: 20px;" class="links">Designs</a>
+              <a href="page2.html" style="margin-left: 20px; margin-top: 20px;" class="links">Contato</a>
+            </div> 
+        </div>
+    </div>
+    </div>
+    <div class="container" style="height: 650px; width: 100%; flex-direction: column;">
+        <div class="container" style="width: 450px; height: 450px; flex-direction: column;">
+            <h1 style="margin-left: 50px; margin-top: 50px; font-size: 46px; color: #008ab9;">Quem sou eu?</h1>
+            <p style="margin-left: 50px; font-size: 3vh; margin-top: -10px; width: 75vh;">
+                Olá, tudo bem? Me chamo Henri e sou um jovem designer, estudante de Desenvolvimento de Sistemas e Desenvolvimento Web. Tenho foco, ambição e busco sempre evoluir minhas habilidades. Trabalho criando artes para redes sociais e thumbnails para YouTube, entregando design moderno, organizado e com impacto visual. Na área do design, tenho 2 anos de experiência, embora tenha começado a atuar profissionalmente há pouco tempo.
+            </p>
+        </div>
+        <div class="container" style="height: 800px; width: 910px;">
+            <img src="src/Sem Título-1.png" alt="LogoHC grande" style="width: 110vh; height: 110vh; margin-left: 730px; margin-top: -449px;" class="img">
+        </div>
+    </div>
+    <div class="cabecalho" style="background-color: black; height: 120px; justify-content: center;" id="Projetos">
+        <h1 style="color: white; font-size: 38px;">Projetos</h1>
+    </div>
+
+    <div class="container" style="width: 100%; height: 650px;">
+        <div class="carousel" id="meu-carousel">
+            <button class="prev" aria-label="Anterior">❮</button>
+
+            <div class="carousel-track">
+                <div class="slide">
+                    <img src="src/liv.png" alt="">
+                    <div class="caption">
+                        <h2>Lively - Beba o que vive!</h2>
+                        <p>Criação de IDV de uma empresa fictícia de sucos naturais. (projeto em andamento)</p>
+                        <a href="lively.html" class="links2" style="font-size: 12px;">Saiba mais</a>
+                    </div>
+                </div>    
+                <div class="slide">
+                    <img src="src/chat1.png" alt="">
+                    <div class="caption">
+                        <h2>ChatSemVírus - Chat Online</h2>
+                        <p>Criação de um chat online com login para fins de estudo. (projeto em andamento)</p>
+                        <a href="chat.html" class="links2" style="font-size: 12px;">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="src/chat2.png" alt="">
+                    <div class="caption">
+                        <h2>Login ChatSemVírus</h2>
+                        <p>Sistema de login e cadastro do ChatSemVírus com banco de dados em tempo real usando o firebase.</p>
+                        <a href="chat.html" class="links2" style="font-size: 12px;">Saiba mais</a>
+                    </div>
+                
+                </div>
+            </div>
+          <button class="next" aria-label="Próximo">❯</button>
+        </div>
+    </div>
+            
+
+    <div class="cabecalho" style="background-color: black; height: 120px; justify-content: center;" id="Designs">
+        <h1 style="color: white; font-size: 38px;">Designs</h1>
+    </div>
+    <div class="container" style="width: 100%; height: 650px;">
+      <div class="design-grid">
+        <img src="designs/DesignPetShop.png" class="design-thumb" alt="Design PetShop">
+        <img src="designs/DesignPizzaHummm.png" class="design-thumb" alt="Design Pizza">
+        <img src="designs/FlyerHamb.png" class="design-thumb" alt="Design Hamburguer">
+        <img src="designs/ThumbDarkSouls.png" class="design-thumb" alt="ThumbDarkSouls">
+        <img src="designs/ThumbInvestir.png" class="design-thumb" alt="ThumbInvestimento">
+      </div>
+
+<!-- Modal que abre a imagem grande -->
+<div id="modal" class="modal">
+  <span id="close">&times;</span>
+  <img id="modal-img">
+</div>
+
+    </div>
+
+  <div class="cabecalho" style="background-color: black; height:35px; justify-content: center; position: relative;">
+  </div>
+
+<style>
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.45s ease-in-out;
+    will-change: transform;
+  }
+
+  .slide {
+    min-width: 100%;          /* garante que cada slide ocupe 100% da área visível */
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 550px;            /* ajuste a altura como quiser ou use auto */
+    object-fit: cover;
+    display: block;           /* evita gaps de linha */
+  }
+
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+
+  button.prev { left: 12px; }
+  button.next { right: 12px; }
+
+  button:focus { outline: 2px solid rgba(255,255,255,0.6); }
+
+  button.prev {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: absolute !important;
+  left: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 999 !important;
+  background-color: rgba(0,0,0,0) !important;
+  color: white !important;
+}
+
+.slide {
+  position: relative;
+  min-width: 100%;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 70%;
+  backdrop-filter: blur(3px);
+}
+
+.caption h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.caption p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+</style>
+
+<script>
+  // Espera tudo carregar (incluindo imagens)
+  window.addEventListener('load', function initCarousel() {
+    const carousel = document.getElementById('meu-carousel');
+    const track = carousel.querySelector('.carousel-track');
+    const slides = Array.from(carousel.querySelectorAll('.slide'));
+    const nextBtn = carousel.querySelector('.next');
+    const prevBtn = carousel.querySelector('.prev');
+
+    if (slides.length === 0) return;
+
+    let index = 0;
+    let slideWidth = slides[0].getBoundingClientRect().width;
+    let autoInterval = null;
+    const AUTO_MS = 3000;
+
+    function updateSlide() {
+      // recalcula largura por segurança (responsivo)
+      slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % slides.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      updateSlide();
+    }
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      restartAuto(); // opcional: reinicia o timer ao clicar
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      restartAuto();
+    });
+
+    // Auto-play
+    function startAuto() {
+      stopAuto();
+      autoInterval = setInterval(nextSlide, AUTO_MS);
+    }
+    function stopAuto() {
+      if (autoInterval) {
+        clearInterval(autoInterval);
+        autoInterval = null;
+      }
+    }
+    function restartAuto() {
+      stopAuto();
+      startAuto();
+    }
+
+    // Pausa quando o mouse entra (útil em desktop)
+    carousel.addEventListener('mouseenter', stopAuto);
+    carousel.addEventListener('mouseleave', startAuto);
+
+    // Atualiza na troca de orientação / resize
+    const ro = new ResizeObserver(updateSlide);
+    ro.observe(carousel);
+
+    // Inicia
+    updateSlide();
+    startAuto();
+
+    // opcional: navegar com setas do teclado
+    carousel.tabIndex = 0;
+    carousel.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { nextSlide(); restartAuto(); }
+      if (e.key === 'ArrowLeft') { prevSlide(); restartAuto(); }
+    });
+  });
+
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.getElementById("close");
+
+  document.querySelectorAll(".design-thumb").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+</script>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+    </script>
+    <script>
+        emailjs.init("I3zfegyrB1MYrjFVI");
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
