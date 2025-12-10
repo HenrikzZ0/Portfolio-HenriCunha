@@ -9,7 +9,7 @@
 
 @media (max-width: 900px) {
   .cont{
-    max-width: 80%;
+    max-width: 100%;
   }
   .text{
     font-size: 1.5vh;
@@ -181,3 +181,4 @@ a {
     font-size: 3vh;
 }
     
+
