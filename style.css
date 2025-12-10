@@ -11,6 +11,9 @@
   .cont{
     max-width: 80%;
   }
+  .text{
+    font-size: 1.5vh;
+  }
 }
 
 @media (max-width: 600px) {
@@ -174,3 +177,7 @@ a {
     gap: 25px;
 }
 
+.text {
+    font-size: 3vh;
+}
+    
