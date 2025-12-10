@@ -7,9 +7,9 @@
     <title>Portfólio HenrikzZ</title>
 </head>
 <body>
-    <div class="cabecalho" style="background-color: black; justify-content: center; padding: 20px;">
-    <a href="index.html">
-        <img src="src/LogoHC - Copia.png" alt="LogoHC" style="width: 80px; height: 80px;">
+    <div class="cabecalho">
+    <a href="index.html" class="logo">
+        <img src="src/LogoHC - Copia.png" alt="LogoHC">
     </a>
 
     <div class="links-nav">
@@ -18,14 +18,15 @@
         <a href="page2.html" class="links">Contato</a>
     </div>
 </div>
+
     <div class="container" style="height: 650px; width: 100%; flex-direction: row; gap: 151px;">
-        <div class="container" style="width: 450px; height: auto; flex-direction: column;">
+        <div class="container" style="width: 500px; height: auto; flex-direction: column; background-color: aqua;" id="cont">
             <h1 style="margin-left: 50px; margin-top: 50px; font-size: 46px; color: #008ab9;">Quem sou eu?</h1>
-            <p style="margin-left: 50px; font-size: 3vh; margin-top: -10px; width: auto;">
+            <p style="margin-left: 50px; font-size: 3vh; margin-top: -10px; width: 100%;">
                 Olá, tudo bem? Me chamo Henri e sou um jovem designer, estudante de Desenvolvimento de Sistemas e Desenvolvimento Web. Tenho foco, ambição e busco sempre evoluir minhas habilidades. Trabalho criando artes para redes sociais e thumbnails para YouTube, entregando design moderno, organizado e com impacto visual. Na área do design, tenho 2 anos de experiência, embora tenha começado a atuar profissionalmente há pouco tempo.
             </p>
         </div>
-        <div class="container" style="height: 800px; width: auto;">
+        <div class="container" style="height: 800px; max-width: 75%; background-color: red;">
             <img src="src/Sem Título-1.png" alt="LogoHC grande" class="img">
         </div>
     </div>
@@ -279,6 +280,11 @@
     if (e.target === modal) modal.style.display = "none";
   });
 </script>
+    </div>
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 
@@ -290,7 +296,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
