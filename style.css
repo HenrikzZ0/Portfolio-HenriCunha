@@ -180,7 +180,10 @@ a {
 .text {
     font-size: 3vh;
 }
-    
+
+.cont {
+    width: 40%;
+}
 
 
 
